@@ -43,6 +43,36 @@
     .btn:hover {
       background-color: RoyalBlue;
     }
+    .wrapper {
+  height: 30vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 50ch;
+  animation: typing 8s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: gold;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
   </style>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -156,7 +186,16 @@
 	<!-- section -->
     <div class="section margin-top_50">
         <div class="container">
+          <div class="wrapper">
+        <div class="typing-demo">
+        <center>  You Pay ₹199/- , We Payback ₹200/-
+
+        <br>** if You do not clear the online test **  </center>
+
+        </div>
+        </div>
             <div class="row">
+
                 <div class="col-md-6 layout_padding_2">
                     <div class="full">
                         <div class="heading_main text_align_left">
@@ -237,7 +276,7 @@
               <br>
                <h2><span></span><b>Discovery Learning Methodology :</b></h2>
               <p>Involves the students in the learning process through short cuts, tasks, games and other experiential learning activity. It also includes lecture and various other participatory sessions.</p>
-    
+
       <p>- Interaction with experts / practitioners </p>
       <p>- Mock Sessions and Periodic Tests </p>
       <p>- Handled by  Experienced and Certified Faculties  </p>
